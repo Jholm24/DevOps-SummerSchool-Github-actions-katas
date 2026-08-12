@@ -37,12 +37,12 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DISABLE_ERRORS: true  
-          
+
   Docker-image:
     runs-on: ubuntu-latest
     needs: [Build]
     permissions: 
-      packeges: write
+      packages: write
     steps:
     - name: Download code
       uses: actions/download-artifact@v4
