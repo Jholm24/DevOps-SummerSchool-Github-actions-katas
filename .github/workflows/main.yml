@@ -1,7 +1,7 @@
 name: Main workflow
 on: push
 env: # Set the secret as an input
-  github_username: ${{ jholm24 }}
+  github_username: jholm24
   github_password: ${{ secrets.GITHUB_TOKEN }}
   GIT_COMMIT: ${{ github.sha }}
 jobs:
